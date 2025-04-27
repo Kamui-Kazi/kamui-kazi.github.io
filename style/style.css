@@ -13,7 +13,7 @@ body {
 
 /* links */
 a, a:link, a:visited { 
-	color: var(--color-5);
+	color: var(--color-2);
 	text-decoration: none; 
 }
 a:hover { 
