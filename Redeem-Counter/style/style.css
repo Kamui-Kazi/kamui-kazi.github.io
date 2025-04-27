@@ -1,0 +1,122 @@
+@import url("palette.css");
+
+body {
+    background-color: var(--color-1);
+
+    margin: 0;
+	padding: 0;
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em; 
+}
+
+/* links */
+a, a:link, a:visited { 
+	color: var(--color-2);
+	text-decoration: none; 
+}
+a:hover { 
+	text-decoration: underline;
+}
+
+/* Central box */
+main {
+    background-color: var(--color-2);
+    
+    max-width: 80%;
+    
+    padding: 2%;
+	
+    margin: 10% auto;
+    margin-top: 1%;
+    
+    overflow-y: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Guide & Sidebar */
+#content {
+    display: flex;
+    flex: 1;
+    
+    gap: 1%;
+}
+
+/* Guide */
+section { 
+    flex: 3;
+    
+    padding: 1%;
+
+    color: var(--color-1);
+    background-color: var(--color-3);
+}
+
+/* Sidebar */
+aside {
+    flex:none;
+
+    padding: 2%;
+
+    color: var(--color-1);
+    background-color: var(--color-3);
+}
+/* Pages */
+aside .NavList {
+    margin: 1%;
+    
+	padding: 0%;
+    
+    font-size: large;
+
+	list-style: none; 
+}
+
+/* bottom Nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1%;
+    
+    padding: 1%;
+    
+    color: var(--color-1);
+    background-color: var(--color-3);
+}
+/* nav items */
+nav label{
+    margin-right: 1%;
+    
+    padding: 1%;
+    
+    background-color: var(--color-4);
+}
+/* back to Project Emporium */
+nav .start {
+    margin-left: auto;
+}
+
+
+table{
+    width: 100%;
+    
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+tr {
+    height: 50%;
+}
+th, td {
+    border: 1px solid var(--color-3);
+
+    padding: 15px;
+    
+    background-color: var(--color-2);
+}
