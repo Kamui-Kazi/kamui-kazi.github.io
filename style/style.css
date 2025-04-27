@@ -1,0 +1,82 @@
+:root {
+    --color-1: #95BF8F;
+    --color-2: #CCF5AC;
+    --color-3: #B1AE91;
+    --color-4: #B87BD9;
+    --color-5: #606271;
+    --color-6: #CED0CE;
+    --color-7: #E6E8E6;
+    --color-8: #543A80;
+}
+
+body {
+    background-color: var(--color-7);
+
+    margin: 0;
+	padding: 0;
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em; 
+}
+
+/* links */
+a, a:link { 
+	color: var(--color-4); 
+	text-decoration: none; 
+}
+a:visited {
+    color: var(--color-8);
+}
+a:hover { 
+	text-decoration: underline;
+}
+
+/* Central box */
+main {
+    background-color: var(--color-6);
+    
+    max-width: 80%;
+    padding: 2%;
+	margin: 10% auto;
+    margin-top: 1%;
+    border-collapse: collapse;
+    overflow-y: auto;
+}
+
+/* Guide & Sidebar */
+#content {
+    display: flex;
+    flex: 1;
+    
+    gap: 1%;
+}
+
+/* Guide */
+section { 
+    flex: 3;
+    
+    padding: 1%;
+
+    color: var(--color-4);
+    background-color: var(--color-7);
+}
+
+/* Sidebar */
+aside {
+    flex:1;
+
+    padding: 2%;
+    padding-top: 1%;
+    border: 2px solid var(--color-4);
+
+    color: var(--color-5);
+    background-color: var(--color-1);
+}
+/* Pages */
+aside .NavList {
+    margin: 1%;
+    font-size: large;
+	padding: 0; 
+	list-style: none; 
+}
