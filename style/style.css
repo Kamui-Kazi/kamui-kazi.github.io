@@ -1,75 +1,70 @@
-@import url(palette.css);
+@import url("palette.css");
+
+html {
+  margin: 0%;
+  padding: 0%;
+
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: var(--color-1);
+
+  background-color: var(--color-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-9);
+}
+a:hover {
+  text-decoration: underline;
+}
 
 body {
-    background-color: var(--color-1);
+  width: 90%;
+  margin: auto;
+  margin-top: 1%;
+  padding: 1%;
 
-    margin: 0;
-	padding: 0;
+  color: var(--color-1);
 
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 16px;
-	line-height: 1.5em; 
+  background-color: var(--color-3);
+
+  overflow-y: auto;
 }
 
-/* links */
-a, a:link, a:visited { 
-	color: var(--color-2);
-	text-decoration: none; 
-}
-a:hover { 
-	text-decoration: underline;
-}
-
-/* Central box */
 main {
-    background-color: var(--color-2);
-    
-    max-width: 80%;
-    
-    padding: 2%;
-	
-    margin: 10% auto;
-    margin-top: 1%;
-    
-    border-collapse: collapse;
-    
-    overflow-y: auto;
+  display: flex;
+  margin: 1%;
+  padding: 1%;
+  gap: 1%;
+
+  background-color: var(--color-4);
 }
 
-/* Guide & Sidebar */
-#content {
-    display: flex;
-    flex: 1;
-    
-    gap: 1%;
+section {
+  flex: 3;
+  padding: 1%;
+
+  color: var(--color-2);
+
+  background-color: var(--color-5);
 }
 
-/* Guide */
-section { 
-    flex: 3;
-    
-    padding: 1%;
-
-    color: var(--color-1);
-    background-color: var(--color-3);
-}
-
-/* Sidebar */
 aside {
-    flex:1;
+  flex: 0.4;
+  padding: 1%;
 
-    padding: 2%;
-    padding-top: 1%;
-    
-    color: var(--color-1);
-    background-color: var(--color-3);
+  color: var(--color-2);
+
+  background-color: var(--color-5);
 }
-/* Pages */
-aside .NavList {
-    margin: 1%;
-    
-    padding: 0%;
 
-    font-size: large;
-	list-style: none; 
+ul {
+  margin: 1%;
+  padding: 0%;
+
+  font-size: large;
+
+  list-style: none;
 }
