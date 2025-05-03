@@ -1,23 +1,15 @@
-.color-1 { 
-	color: #dbd8e3; 
-}
-	
-.color-2 { 
-	color: #5c5470; 
-}
-
-.color-3 { 
-	color: #352f44; 
-}
-
-.color-4 { 
-	color: #2a2438; 
-}
-
 
 :root {
-    --color-1: #dbd8e3;
-    --color-2: #5c5470;
-    --color-3: #352f44;
-    --color-4: #2a2438;
+    --color-1: #f1f0fd;
+    --color-2: #e5e3fc;
+    --color-3: #d3cdf8;
+    --color-4: #b9aef3;
+    --color-5: #a48dec;
+    --color-6: #9672e2;
+    --color-7: #8956d5;
+    --color-8: #7747bb;
+    --color-9: #603c97;
+    --color-10: #543a80;
+    --color-11: #2f2046;
 }
+
