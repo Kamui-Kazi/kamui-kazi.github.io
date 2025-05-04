@@ -1,122 +1,114 @@
 @import url("palette.css");
 
+/* 
+Positioning – affects how the element is placed.
+    position, top, right, bottom, left, z-index
+
+Box Model – size and spacing.
+    display, width, height, margin, padding, box-sizing
+
+Typography – text styling.
+    font, font-size, line-height, color, text-align, letter-spacing
+
+Visual – backgrounds, borders, shadows.
+    background, border, box-shadow, opacity
+
+Miscellaneous – transitions, animations, etc.
+    transition, transform, cursor, overflow 
+*/
+
+html {
+  margin: 0%;
+  padding: 0%;
+
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: var(--color-1);
+
+  background-color: var(--color-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-9);
+}
+a:hover {
+  text-decoration: underline;
+}
+
 body {
-    background-color: var(--color-1);
+  width: 90%;
+  margin: auto;
+  margin-top: 1%;
+  padding: 1%;
 
-    margin: 0;
-	padding: 0;
+  color: var(--color-1);
 
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 16px;
-	line-height: 1.5em; 
+  background-color: var(--color-3);
+
+  overflow-y: auto;
 }
 
-/* links */
-a, a:link, a:visited { 
-	color: var(--color-2);
-	text-decoration: none; 
-}
-a:hover { 
-	text-decoration: underline;
-}
-
-/* Central box */
 main {
-    background-color: var(--color-2);
-    
-    max-width: 80%;
-    
-    padding: 2%;
-	
-    margin: 10% auto;
-    margin-top: 1%;
-    
-    overflow-y: auto;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  margin: 1%;
+  padding: 1%;
+  gap: 1%;
+
+  background-color: var(--color-4);
 }
 
-/* Guide & Sidebar */
-#content {
-    display: flex;
-    flex: 1;
-    
-    gap: 1%;
+section {
+  flex: 3;
+  padding: 1%;
+
+  color: var(--color-2);
+
+  background-color: var(--color-5);
 }
 
-/* Guide */
-section { 
-    flex: 3;
-    
-    padding: 1%;
-
-    color: var(--color-1);
-    background-color: var(--color-3);
-}
-
-/* Sidebar */
 aside {
-    flex:none;
+  flex: 0.4;
+  padding: 1%;
 
-    padding: 2%;
+  color: var(--color-2);
 
-    color: var(--color-1);
-    background-color: var(--color-3);
-}
-/* Pages */
-aside .NavList {
-    margin: 1%;
-    
-	padding: 0%;
-    
-    font-size: large;
-
-	list-style: none; 
+  background-color: var(--color-5);
 }
 
-/* bottom Nav bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-    margin-top: 1%;
-    
-    padding: 1%;
-    
-    color: var(--color-1);
-    background-color: var(--color-3);
-}
-/* nav items */
-nav label{
-    margin-right: 1%;
-    
-    padding: 1%;
-    
-    background-color: var(--color-4);
-}
-/* back to Project Emporium */
-nav .start {
-    margin-left: auto;
+  display: flex;
+  margin: 1%;
+  padding: 1%;
+
+  background-color: var(--color-4);
 }
 
+label {
+  margin-right: 1%;
+  padding: 1%;
 
-table{
-    width: 100%;
-    
-    border-collapse: collapse;
-    
-    text-align: center;
-}
-tr {
-    height: 50%;
-}
-th, td {
-    border: 1px solid var(--color-3);
+  color: var(--color-2);
 
-    padding: 15px;
-    
-    background-color: var(--color-2);
+  background-color: var(--color-5);
+}
+
+label[class="start"] {
+  margin-left: auto;
+  padding: auto;
+}
+
+ul[class="sidebar"] {
+  margin: 1%;
+  padding: 0%;
+
+  list-style: none;
+}
+
+ul[class="sidebar"] {
+  font-size: large;
 }
