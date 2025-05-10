@@ -24,6 +24,7 @@ jobs:
       - name: Replace docs from repos B and C
         run: |
           rm -rf ./Shoutout-Raid ./Redeem-Counter
+          mkdir -p ./Shoutout-Raid ./Redeem-Counter
           cp -r Shoutout-clone/docs/ ./Shoutout-Raid
           cp -r Redeem-clone/docs/* ./Redeem-Counter 
 
