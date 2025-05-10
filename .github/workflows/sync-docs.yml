@@ -15,23 +15,25 @@ jobs:
           ref: testing
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Clone repo Shoutout-Raid
-        run: git clone --depth 1 https://github.com/Kamui-Kazi/Shoutout-Raid.git Shoutout-clone
+      - name: Clone Shoutout-Raid (Repo B)
+        run: git clone --depth 1 https://github.com/Kamui-Kazi/Shoutout-Raid.git temp-b
 
-      - name: Clone repo Redeem-Counter
-        run: git clone --depth 1 https://github.com/Kamui-Kazi/Redeem-Counter.git Redeem-clone
+      - name: Clone Redeem-Counter (Repo C)
+        run: git clone --depth 1 https://github.com/Kamui-Kazi/Redeem-Counter.git temp-c
 
-      - name: Replace docs from repos Shoutout-Raid and Redeem-Counter
+      - name: Copy docs folders into subdirectories
         run: |
-          rm -rf docs
-          mkdir -p docs docs/Shoutout-Raid docs/Redeem-Counter
-          cp -r Shoutout-clone/docs/ docs/Shoutout-Raid
-          cp -r Redeem-clone/docs/* docs/Redeem-Counter 
+          rm -rf Shoutout-Raid Redeem-Counter  # optional cleanup
+          mkdir -p Shoutout-Raid Redeem-Counter
 
-      - name: Commit and push changes
+          # Use rsync to preserve structure and remove deleted files
+          rsync -a --delete temp-b/docs/ Shoutout-Raid/
+          rsync -a --delete temp-c/docs/ Redeem-Counter/
+
+      - name: Commit and push if changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add docs/
-          git diff --cached --quiet || git commit -m "Update docs from repos Shoutout-Raid and Redeem-Counter"
+          git add Shoutout-Raid/ Redeem-Counter/
+          git diff --cached --quiet || git commit -m "Sync docs from Shoutout-Raid and Redeem-Counter"
           git push origin testing
