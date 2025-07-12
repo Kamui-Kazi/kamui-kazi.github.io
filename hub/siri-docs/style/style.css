@@ -1,0 +1,100 @@
+@import url("palette.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-background);
+}
+
+body {
+  padding: 10px;
+  color: var(--text-1);
+  font-family: Tahoma, Ubuntu;
+  font-size: 18px;
+  background: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  background: var(--surface-3);
+  box-shadow: 5px 10px;
+  box-shadow: 1px 5px 10px var(--shadows);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header img {
+  width: 85px;
+  height: 225px;
+}
+
+.topnav {
+  overflow: hidden;
+  background: #212e37;
+  box-shadow: 5px 10px;
+  box-shadow: 1px 5px 10px var(--shadows);
+  border-radius: 0px 0px 25px 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  color: var(--surface-3);
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: #12110f;
+  background: #8ab3e9;
+}
+
+.entry {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--surface-3);
+  box-shadow: 5px 10px;
+  box-shadow: 1px 5px 10px var(--shadows);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.column {
+  width: 100%;
+}
+
+.column ul {
+  list-style-type: none;
+}
+
+.column h2 {
+  font-size: 30px;
+}
+
+.column h3 {
+  font-size: 20px;
+}
+
+.column h4 {
+  font-size: 15px;
+  color: #777777;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: var(--surface-2);
+  box-shadow: 5px 10px;
+  box-shadow: 1px 5px 10px var(--shadows);
+  border-radius: 25px 25px 25px 25px;
+}

@@ -1,0 +1,66 @@
+/* :root,
+:root.light-mode {
+  --level-1: #d3cdf8;
+  --level-2: #b9aef3;
+  --level-3: #a48dec;
+  --level-4: #9672e2;
+
+  --link-color: #3c4476;
+  --text-color: #543a80;
+}
+
+:root.dark-mode {
+  --level-1: #171520;
+  --level-2: #241b2f;
+  --level-3: #262335;
+  --level-4: #2e2643;
+
+  --link-color: #495495;
+  --text-color: #9d8bca;
+} */
+:root,
+.lightmode {
+  /* main */
+  --color-1: #b3e5fc;
+  --color-2: #b3e5fc;
+
+  /* background */
+  --color-background: #b3e5fc;
+  --shadows: #81d4fa;
+
+  /* surface */
+  --surface-1: #;
+  --surface-2: #d2d2d2;
+  --surface-3: #f2f2f2;
+
+  /* text */
+  --text-1: #12110f;
+  --text-2: #f2f2f2;
+  --text-3: #651d80;
+
+  --link-unvisited: #651d80;
+  --link-visited: #a656c5;
+}
+
+.darkmode {
+  /* main */
+  --color-1: #651d80;
+  --color-2: #a656c5;
+
+  /* background */
+  --color-background: #a656c5;
+  --shadows: #9c4ebb;
+
+  /* surface */
+  --surface-1: #12110f;
+  --surface-2: #d2d2d2;
+  --surface-3: #f2f2f2;
+
+  /* text */
+  --text-1: #12110f;
+  --text-2: #f2f2f2;
+  --text-3: #2d82ed;
+
+  --link-unvisited: #651d80;
+  --link-visited: #a656c5;
+}
